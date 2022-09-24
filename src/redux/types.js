@@ -1,0 +1,5 @@
+export default {
+  GETTODO: 'GETTODO',
+  POSTTODO: 'POSTTODO',
+  DELETETODO: 'DELETETODO',
+};
