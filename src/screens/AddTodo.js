@@ -8,10 +8,13 @@ import {
 import React, {useState} from 'react';
 import {postTodo} from '../redux/actions/todo';
 import navigationScreen from '../constants/navigationScreen';
+import {useDispatch} from 'react-redux';
 
 const AddTodo = ({navigation}) => {
   const [title, setTitle] = useState();
   const [desc, setDesc] = useState();
+
+  const dispatch = useDispatch();
 
   const onPost = () => {
     postTodo(title, desc);

@@ -7,9 +7,7 @@ import {
   Button,
 } from 'react-native';
 import React, {useEffect, useState} from 'react';
-import axios from 'axios';
 import {allTodo, deleteTodo, delTodo} from '../redux/actions/todo';
-import AddTodo from './AddTodo';
 import navigationScreen from '../constants/navigationScreen';
 import {useIsFocused} from '@react-navigation/native';
 
