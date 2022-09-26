@@ -9,7 +9,7 @@ const Stack = createNativeStackNavigator();
 export default function Route() {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
+      <Stack.Navigator screenOptions={{headerShown: false}}>
         <Stack.Screen name={navigationScreen.HOME} component={Home} />
         <Stack.Screen name={navigationScreen.ADDTODO} component={AddTodo} />
         <Stack.Screen name={navigationScreen.EDITTODO} component={EditTodo} />

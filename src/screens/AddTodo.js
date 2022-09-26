@@ -23,6 +23,9 @@ const AddTodo = ({navigation}) => {
 
   return (
     <View style={styles.root}>
+      <View style={styles.head}>
+        <Text style={styles.headTitle}>Add Todo</Text>
+      </View>
       <Text style={styles.heading}>Title</Text>
       <TextInput
         placeholder="Title"
@@ -53,6 +56,14 @@ const styles = StyleSheet.create({
     margin: 10,
     flex: 1,
   },
+  head: {
+    marginVertical: 16,
+  },
+  headTitle: {
+    fontSize: 25,
+    fontWeight: 'bold',
+    color: 'black',
+  },
   heading: {
     fontSize: 16,
     fontWeight: 'bold',
@@ -66,6 +77,8 @@ const styles = StyleSheet.create({
     padding: 16,
     marginBottom: 10,
     fontSize: 16,
+    borderColor: '#dcdde1',
+    backgroundColor: '#dcdde1',
   },
   desc: {
     width: '100%',
@@ -77,10 +90,12 @@ const styles = StyleSheet.create({
     textAlignVertical: 'top',
     lineHeight: 23,
     fontSize: 16,
+    borderColor: '#dcdde1',
+    backgroundColor: '#dcdde1',
   },
   button: {
     width: 200,
-    backgroundColor: '#5f27cd',
+    backgroundColor: '#38ada9',
     height: 48,
     borderRadius: 5,
     alignItems: 'center',
